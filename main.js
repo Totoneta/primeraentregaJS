@@ -6,7 +6,7 @@
 2. Problemas y soluciones - Calculadora de Dividendos(Entrega 1)
 3. Consigna Para T.P.(Entrega 2)
 4. Replanteo de evolución de proyecto (Entrega 2)
-5. Problemas y soluciones - Calculadora "Científica"
+5. Problemas y soluciones - Calculadora "Científica" (Entrega 2)
 6. Ejercicio práctico - Calculadora "Científica":
 --------------------------------------------------------------------------------------
 1. 
@@ -47,7 +47,7 @@ Lo que no puedo solucionar es el utilizar objetos.
 
 --------------------------------------------------------------------------------------
 5.
-Problemas y soluciones - Calculadora "Científica"
+Problemas y soluciones - Calculadora "Científica" (Entrega 2)
 
 -Cambiar las funciones a un archivo aparte es más ordenado, pero devuelve que no existe ninguna función
 Tenía que poner antes la etiqueta de funciones y debajo la aplicación: <script scr="funciones.js">, y debajo <script scr"main.js"> en HTML
@@ -88,7 +88,7 @@ while (true) {//Envuelve todo el codigo para que siempre se mantenga activo hast
         alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
         break
         
-    } else {//Solo si no coloca opciones correctas ('1' o '0')
+    } else {//Solo si no coloca opciones correctas
         alert("Opción incorrecta. Intente nuevamente!")
     };
 
