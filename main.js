@@ -60,7 +60,7 @@ Tenía que poner antes la etiqueta de funciones y debajo la aplicación: <script
 */
 
 while (true) {//Envuelve todo el codigo para que siempre se mantenga activo hasta que el usuario decida por opcion terminarlo
-    let opt = parseInt(prompt("Ingrese una opción:\n1 - Dividendos\n2 - Suma\n3 - Resta\n4 - Multiplicación\n5 - División\n0 - Abandonar la aplicación"));
+    let opt = parseInt(prompt("Ingrese una opción:\n1 - Dividendos\n2 - Suma\n3 - Resta\n4 - Multiplicación\n5 - División\n6 - Potencia\n7 - Raíz\n0 - Abandonar la aplicación"));
 
     if (isNaN(opt) || opt === "") { //No aceptar 'nan' o ''
         alert("Opción incorrecta. Intente nuevamente!")
@@ -79,7 +79,13 @@ while (true) {//Envuelve todo el codigo para que siempre se mantenga activo hast
 
     } else if (opt === 5) {
         division();
+
+    } else if (opt === 6) {
+        potencia();
         
+    } else if (opt === 7) {
+        raizcuadrada();
+
     }else if (opt === -1) {//Segunda salida dentro del bucle, para que no sea infinito para el usuario
         alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
         break;
