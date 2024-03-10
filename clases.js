@@ -1,11 +1,13 @@
 class Calculadora{
+
     constructor(bienvenida){
         this.bienvenida = bienvenida;
     };
 
     dividendos(opt) {//sacar los dividendos
         alert(calculadoraVar.bienvenida);
-        let dividendos = [];                                           
+        let dividendos = [];
+
         while (true) {
             let numa = parseInt(prompt('Ingresa un número para calcular sus dividendos:\nPara volver al Menú Principal escriba 0 y presione Aceptar. '));
     
@@ -171,12 +173,12 @@ class Utiles{//Útiles escolares
         this.precio = precioIntro;
     };
 
-    venta(catalogo){//Si alguien quiere comprar, resta del inventario
+    venta(catalogo, carrito){//Si alguien quiere comprar, resta del inventario
         while(true){
-            let cant = parseInt(prompt("Qué cantidad de " + this.nombre + " deseas llevar?\nEl precio por unidad es de $" + this.precio + "\nPara volver al Menú Principal escriba 0 y presione Aceptar."));
+            let cant = parseInt(prompt("Carrito: $" + carrito + "\nQué cantidad de " + this.nombre + " deseas llevar?\nEl precio por unidad es de $" + this.precio + "\nPara volver al Menú Principal escriba 0 y presione Aceptar."));
             let preciofinal = 0;
             if (isNaN(cant) || cant === "") { //No aceptar 'nan' o ''
-                alert("Opción incorrecta. Intente nuevamente!");
+                alert("Carrito: $" + carrito + "\nOpción incorrecta. Intente nuevamente!");
             }else if (cant === 0){
                 catalogo = 0;
                 break;
@@ -185,11 +187,12 @@ class Utiles{//Útiles escolares
             }else{
                 this.cantidad -= cant; 
                 preciofinal += this.precio * cant;
+                carrito += preciofinal;
                 if(this.cantidad<1){
-                    alert("Aquí tiene " + cant + " de " + this.nombre + " con un precio total de $" + preciofinal + ", no quedaron más " + this.nombre);
+                    alert("Carrito: $" + carrito + "\nAquí tiene " + cant + " de " + this.nombre + " con un precio total de $" + preciofinal + ", no quedaron más " + this.nombre);
                     break;
                 }else{
-                    alert("Aquí tiene " + cant + " de " + this.nombre + "\nCon un precio total de: $" + preciofinal + "\nSi necesitas más, aún nos restan " + this.cantidad + " de " + this.nombre);
+                    alert("Carrito: $" + carrito + "\nAquí tiene " + cant + " de " + this.nombre + "\nCon un precio total de: $" + preciofinal + "\nSi necesitas más, aún nos restan " + this.cantidad + " de " + this.nombre);
                     break;
                 };
             };
@@ -197,5 +200,4 @@ class Utiles{//Útiles escolares
     };
 
 };
-
 

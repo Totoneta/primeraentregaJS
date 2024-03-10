@@ -72,12 +72,14 @@ Pedí ayuda al tutor Giuliano. Me ayudo aportando la idea de crear la calculador
 - Se rompe cuando presiono -1 para salir al menú principal de cada app.
 Falto agregar la variable opcion a las respectivas clases de cada app(calculadora científica(opt) y venta de utiles(catalogo)).
 
+-No se almacena la suma de compra en "venta de útiles", en la variable carrito, cuando vuelve al inicio de compra retorna $0
+
 --------------------------------------------------------------------------------------
 
 6. Calculadora "Científica y Stock de Útiles":
 */
 while(true){
-    opcioningreso = parseInt(prompt("Ingrese:\n1 - Calculadora Científica\n2 - Venta de útiles escolares"));
+    opcioningreso = parseInt(prompt("Ingrese:\n1 - Calculadora Científica\n2 - Venta de útiles escolares\nPara abandonar escriba 0 y presione Aceptar."));
     while (opcioningreso === 1) {//Envuelve todo el codigo para que siempre se mantenga activo hasta que el usuario decida por opcion terminarlo
         let opt = parseInt(prompt("Ingrese una opción:\n1 - Dividendos\n2 - Suma\n3 - Resta\n4 - Multiplicación\n5 - División\n6 - Potencia\n7 - Raíz\nPresione 0 para volver al Menú Principal."));
 
@@ -116,34 +118,45 @@ while(true){
     };
 
     while(opcioningreso === 2){
-        let catalogo = parseInt(prompt("Ingrese una opción para comprar:\n1 - Lápiz\n2 - Birome\n3 - Liquid Paper\n4 - Hojas cuadriculadas\n5 - Hojas rayadas\n6 - Carpeta\n7 - Cartuchera\nPresione 0 para volver al Menú Principal."))
+        let carrito = 0;//Compra total
+        let catalogo = parseInt(prompt("Carrito: $" + carrito + "\nIngrese una opción para comprar:\n1 - Lápiz\n2 - Birome\n3 - Liquid Paper\n4 - Hojas cuadriculadas\n5 - Hojas rayadas\n6 - Carpeta\n7 - Cartuchera\nPresione 0 para volver al Menú Principal."))
         
         if (isNaN(catalogo) || catalogo === "") { //No aceptar 'nan' o ''
-            alert("Opción incorrecta. Intente nuevamente!");
+            alert("Carrito: $" + carrito + "\nOpción incorrecta. Intente nuevamente!");
         }else if (catalogo === 1){//Lapices
-            Lapiz.venta();
+            Lapiz.venta(catalogo, carrito);
+
         }else if (catalogo === 2){//Biromes
             Birome.venta();
+
         }else if (catalogo === 3){//LiquidPaper
             Liquidpaper.venta();
+
         }else if (catalogo === 4){//Hojas Cuadriculadas
             Hojascuadriculadas.venta();
+
         }else if (catalogo === 5){//Hojas Rayadas
             Hojasrayadas.venta();
+
         }else if (catalogo === 6){//Carpetas
             Carpeta.venta();
+
         }else if (catalogo === 7){//Cartucheras
             Cartuchera.venta();
-        }else if (catalogo === -1){
-            alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
-            break;
+
         }else if (catalogo === 0){
             break;
+
         }else {//Solo si no coloca opciones correctas
             alert("Opción incorrecta. Intente nuevamente!");
         };
     
     };
+    while(opcioningreso === 0){
+        alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
+        break; 
+    };
+
 };
 
 
