@@ -104,12 +104,9 @@ while(true){
             
         } else if (opt === 7) {
             calculadoraVar.raizcuadrada();//Tomas un valor y retorna su raíz cuadrada
-
-        }else if (opt === -1) {//Segunda salida dentro del bucle, para que no sea infinito para el usuario
-            alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
-            break;
-                
+            
         } else if (opt === 0) {//Al introducir '0' termina el bucle principal
+            alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
             break
             
         } else {//Solo si no coloca opciones correctas

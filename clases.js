@@ -7,13 +7,13 @@ class Calculadora{
         alert(calculadoraVar.bienvenida);
         let dividendos = [];                                           
         while (true) {
-            let numa = parseInt(prompt('Ingresa un número para calcular sus dividendos:\nPara volver al Menú Principal escriba -1 y presione Aceptar. '));
+            let numa = parseInt(prompt('Ingresa un número para calcular sus dividendos:\nPara volver al Menú Principal escriba 0 y presione Aceptar. '));
     
             if (isNaN(numa) || numa === "") { //No aceptar 'nan' o ''
                 alert("Opción incorrecta. Intente nuevamente!")
     
-            } else if (numa === -1) {//Salida dentro del bucle, para que no sea infinito para el usuario
-                opt = -1;
+            } else if (numa === 0) {//Salida dentro del bucle, para que no sea infinito para el usuario
+                opt = 0;
                 break;
     
             } else {//Los calculos de dividendos
@@ -34,14 +34,14 @@ class Calculadora{
         while (true) {
             alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('Suma:\nIngresa el primer número: '));
-            let numb = parseInt(prompt('Suma:\nIngresa el segundo número\nPara volver al Menú Principal escriba -1 y presione Aceptar. '));
+            let numb = parseInt(prompt('Suma:\nIngresa el segundo número\nPara volver al Menú Principal escriba 0 y presione Aceptar. '));
             let res = 0;
     
             if (isNaN(numa) || isNaN(numb) || numa === "" || numb === "") { //No aceptar 'nan' o '' en ambos números introducidos por el user
                 alert("Opción incorrecta. Intente nuevamente!")
     
-            } else if (numb === -1) {//Salida dentro del bucle, para que no sea infinito para el usuario
-                opt = -1;
+            } else if (numb === 0) {//Salida dentro del bucle, para que no sea infinito para el usuario
+                opt = 0;
                 break;
     
             } else {//Suma
@@ -56,14 +56,14 @@ class Calculadora{
         while (true) {
             alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('Resta:\nIngresa el primer número: '));
-            let numb = parseInt(prompt('Resta:\nIngresa el segundo número\nPara volver al Menú Principal escriba -1 y presione Aceptar. '));
+            let numb = parseInt(prompt('Resta:\nIngresa el segundo número\nPara volver al Menú Principal escriba 0 y presione Aceptar. '));
             let res = 0;
     
             if (isNaN(numa) || isNaN(numb) || numa === "" || numb === "") { //No aceptar 'nan' o '' en ambos números introducidos por el user
                 alert("Opción incorrecta. Intente nuevamente!")
     
-            } else if (numb === -1) {//Salida dentro del bucle, para que no sea infinito para el usuario
-                opt = -1;
+            } else if (numb === 0) {//Salida dentro del bucle, para que no sea infinito para el usuario
+                opt = 0;
                 break;
     
             } else {//Resta
@@ -78,14 +78,14 @@ class Calculadora{
         while (true) {
             alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('Multiplicación:\nIngresa el primer número: '));
-            let numb = parseInt(prompt('Multiplicación:\nIngresa el segundo número\nPara volver al Menú Principal escriba -1 y presione Aceptar. '));
+            let numb = parseInt(prompt('Multiplicación:\nIngresa el segundo número\nPara volver al Menú Principal escriba 0 y presione Aceptar. '));
             let res = 0;
     
             if (isNaN(numa) || isNaN(numb) || numa === "" || numb === "") { //No aceptar 'nan' o '' en ambos números introducidos por el user
                 alert("Opción incorrecta. Intente nuevamente!")
     
-            } else if (numb === -1) {//Salida dentro del bucle, para que no sea infinito para el usuario
-                opt = -1;
+            } else if (numb === 0) {//Salida dentro del bucle, para que no sea infinito para el usuario
+                opt = 0;
                 break;
     
             } else {//Multiplicación
@@ -100,14 +100,14 @@ class Calculadora{
         while (true) {
             alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('División:\nIngresa el primer número: '));
-            let numb = parseInt(prompt('División:\nIngresa el segundo número\nPara volver al Menú Principal escriba -1 y presione Aceptar. '));
+            let numb = parseInt(prompt('División:\nIngresa el segundo número\nPara volver al Menú Principal escriba 0 y presione Aceptar. '));
             let res = 0;
     
             if (isNaN(numa) || isNaN(numb) || numa === "" || numb === "") { //No aceptar 'nan' o '' en ambos números introducidos por el user
                 alert("Opción incorrecta. Intente nuevamente!")
     
-            } else if (numb === -1) {//Salida dentro del bucle, para que no sea infinito para el usuario
-                opt = -1;
+            } else if (numb === 0) {//Salida dentro del bucle, para que no sea infinito para el usuario
+                opt = 0;
                 break;
     
             } else {//División
@@ -122,14 +122,14 @@ class Calculadora{
         while (true) {
             alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('Potencia:\nIngresa el primer número(base): '));
-            let numb = parseInt(prompt('Potencia:\nIngresa el segundo número(Exponente)\nPara volver al Menú Principal escriba -1 y presione Aceptar. '));
+            let numb = parseInt(prompt('Potencia:\nIngresa el segundo número(Exponente)\nPara volver al Menú Principal escriba 0 y presione Aceptar. '));
             let res = 0;
     
             if (isNaN(numa) || isNaN(numb) || numa === "" || numb === "") { //No aceptar 'nan' o '' en ambos números introducidos por el user
                 alert("Opción incorrecta. Intente nuevamente!")
     
-            } else if (numb === -1) {//Salida dentro del bucle, para que no sea infinito para el usuario
-                opt = -1;
+            } else if (numb === 0) {//Salida dentro del bucle, para que no sea infinito para el usuario
+                opt = 0;
                 break;
     
             } else {//Potencia
@@ -173,12 +173,12 @@ class Utiles{//Útiles escolares
 
     venta(catalogo){//Si alguien quiere comprar, resta del inventario
         while(true){
-            let cant = parseInt(prompt("Qué cantidad de " + this.nombre + " deseas llevar?\nEl precio por unidad es de $" + this.precio + "\nPara volver al Menú Principal escriba -1 y presione Aceptar."));
+            let cant = parseInt(prompt("Qué cantidad de " + this.nombre + " deseas llevar?\nEl precio por unidad es de $" + this.precio + "\nPara volver al Menú Principal escriba 0 y presione Aceptar."));
             let preciofinal = 0;
             if (isNaN(cant) || cant === "") { //No aceptar 'nan' o ''
                 alert("Opción incorrecta. Intente nuevamente!");
-            }else if (cant === -1){
-                catalogo = -1;
+            }else if (cant === 0){
+                catalogo = 0;
                 break;
             }else if (cant>this.cantidad){
                 alert("No contamos con esa cantidad. Actualmente tenemos " + this.cantidad + " " + this.nombre + ".");
