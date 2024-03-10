@@ -1,13 +1,15 @@
 /*
 ÍNDICE:
     --->Funciones en "main.js"<---
+    --->Clases en "clases.js"<---
+    --->Objetos en "objetos.js"<---
 
-1. Consigna Para T.P.(Entrega 1)
-2. Problemas y soluciones - Calculadora de Dividendos(Entrega 1)
-3. Consigna Para T.P.(Entrega 2)
-4. Replanteo de evolución de proyecto (Entrega 2)
-5. Problemas y soluciones - Calculadora "Científica" (Entrega 2)
-6. Ejercicio práctico - Calculadora "Científica":
+1. Consigna Para T.P.(Entrega 1).
+2. Problemas y soluciones - Calculadora de Dividendos(Entrega 1).
+3. Consigna Para T.P.(Entrega 2).
+4. Replanteo de evolución de proyecto (Entrega 2).
+5. Problemas y soluciones - Calculadora "Científica" (Entrega 2).
+6. Ejercicio práctico - Calculadora "Científica"
 --------------------------------------------------------------------------------------
 1. 
 Consigna Para T.P.(Entrega 1)
@@ -15,18 +17,18 @@ Consigna Para T.P.(Entrega 1)
 Tomando como base los ejemplos de la estructura for y while,
 crear un algoritomo que repita un bloque de instrucciones.
 En cada repetición es necesario efectual una operación o comparación
-para obtener una salida por alerta o consola 
+para obtener una salida por alerta o consola.
 --------------------------------------------------------------------------------------
 2. 
 Problemas y soluciones - Calculadora de Dividendos(Entrega 1)
 
--El bucle principal se rompe antes de llegar a la segunda opción(user coloca '0' para salir / línea actual 71)
+-El bucle principal se rompe antes de llegar a la segunda opción(user coloca '0' para salir / línea actual 71).
 *HABÍA UN BREAK MAL UBICADO
 
--Opción inválida en los if, si presiono enter sín ninguna opción respone con Nan igual(línea actual 43 y 51)
+-Opción inválida en los if, si presiono enter sín ninguna opción respone con Nan igual(línea actual 43 y 51).
 *ERA PARSEINT, NO NUMBER LPM
 
--No se corta el bucle cuando se coloca -1, en la opcion del 2do bucle while interno y ya coloque un break(línea actual 54)
+-No se corta el bucle cuando se coloca -1, en la opcion del 2do bucle while interno y ya coloque un break(línea actual 54).
 *NO ENCUENTRO SOLUCION
 --------------------------------------------------------------------------------------
 3. 
@@ -49,7 +51,7 @@ Lo que no puedo solucionar es el utilizar objetos.
 5.
 Problemas y soluciones - Calculadora "Científica" (Entrega 2)
 
--Cambiar las funciones a un archivo aparte es más ordenado, pero devuelve que no existe ninguna función
+-Cambiar las funciones a un archivo aparte es más ordenado, pero devuelve que no existe ninguna función.
 Tenía que poner antes la etiqueta de funciones y debajo la aplicación: <script scr="funciones.js">, y debajo <script scr"main.js"> en HTML
 
 -
@@ -66,25 +68,25 @@ while (true) {//Envuelve todo el codigo para que siempre se mantenga activo hast
         alert("Opción incorrecta. Intente nuevamente!")
 
     } else if (opt === 1) {//Introducir  '1'  arranca la calculadora de dividendos
-        dividendos();
+        dividendos();//toma 1 número y retorna sus dividendos
 
     } else if (opt === 2) {
-        suma();
+        suma();//Tomas dos valores y retorna su suma
 
     } else if (opt === 3) {
-        resta();
+        resta();//Tomas dos valores y retorna el 1 valor - el 2 valor
 
     } else if (opt === 4) {
-        multiplicacion();
+        multiplicacion();//Tomas dos valores y retorna su multiplicación
 
     } else if (opt === 5) {
-        division();
+        division();//Tomas dos valores y retorna la división del 1 valor / el 2 valor
 
     } else if (opt === 6) {
-        potencia();
+        potencia();//Tomas dos valores y retorna el 1 valor como base y el 2 valor como exponente
         
     } else if (opt === 7) {
-        raizcuadrada();
+        raizcuadrada();//Tomas un valor y retorna su raíz cuadrada
 
     }else if (opt === -1) {//Segunda salida dentro del bucle, para que no sea infinito para el usuario
         alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
