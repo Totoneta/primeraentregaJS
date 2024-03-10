@@ -3,7 +3,7 @@ class Calculadora{
         this.bienvenida = bienvenida;
     };
 
-    dividendos() {//sacar los dividendos
+    dividendos(opt) {//sacar los dividendos
         alert(calculadoraVar.bienvenida);
         let dividendos = [];                                           
         while (true) {
@@ -30,7 +30,7 @@ class Calculadora{
     
     };
     
-    suma() {//suma
+    suma(opt) {//suma
         while (true) {
             alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('Suma:\nIngresa el primer número: '));
@@ -52,7 +52,7 @@ class Calculadora{
         };
     };
         
-    resta() {//resta
+    resta(opt) {//resta
         while (true) {
             alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('Resta:\nIngresa el primer número: '));
@@ -74,7 +74,7 @@ class Calculadora{
         };
     };
         
-    multiplicacion() {//multiplicación
+    multiplicacion(opt) {//multiplicación
         while (true) {
             alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('Multiplicación:\nIngresa el primer número: '));
@@ -96,7 +96,7 @@ class Calculadora{
         };
     };    
     
-    division() {//división
+    division(opt) {//división
         while (true) {
             alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('División:\nIngresa el primer número: '));
@@ -118,7 +118,7 @@ class Calculadora{
         };
     };
     
-    potencia() {//Potencia
+    potencia(opt) {//Potencia
         while (true) {
             alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('Potencia:\nIngresa el primer número(base): '));
@@ -140,7 +140,7 @@ class Calculadora{
         };
     };
     
-    raizcuadrada() {//Raíz cuadrada
+    raizcuadrada(opt) {//Raíz cuadrada
         while (true) {
             alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('RaízCuadrada:\nIngresa el número para conseguir su raíz cuadrada.\nPara volver al Menú Principal escriba -1 y presione Aceptar. '));
@@ -171,14 +171,14 @@ class Utiles{//Útiles escolares
         this.precio = precioIntro;
     };
 
-    venta(){//Si alguien quiere comprar, resta del inventario
+    venta(catalogo){//Si alguien quiere comprar, resta del inventario
         while(true){
             let cant = parseInt(prompt("Qué cantidad de " + this.nombre + " deseas llevar?\nEl precio por unidad es de $" + this.precio + "\nPara volver al Menú Principal escriba -1 y presione Aceptar."));
             let preciofinal = 0;
             if (isNaN(cant) || cant === "") { //No aceptar 'nan' o ''
                 alert("Opción incorrecta. Intente nuevamente!");
             }else if (cant === -1){
-                opt = -1;
+                catalogo = -1;
                 break;
             }else if (cant>this.cantidad){
                 alert("No contamos con esa cantidad. Actualmente tenemos " + this.cantidad + " " + this.nombre + ".");

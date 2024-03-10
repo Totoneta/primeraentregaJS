@@ -8,7 +8,7 @@
 3. Consigna Para T.P.(Entrega 2).
 4. Replanteo de evolución de proyecto (Entrega 2).
 5. Problemas y soluciones - Calculadora "Científica" (Entrega 2).
-6. Ejercicio práctico - Calculadora "Científica"
+6. Ejercicio práctico - Calculadora "Científica" y "Venta de Útiles"
 
 --------------------------------------------------------------------------------------
 
@@ -26,13 +26,13 @@ para obtener una salida por alerta o consola.
 Problemas y soluciones - Calculadora de Dividendos(Entrega 1)
 
 - El bucle principal se rompe antes de llegar a la segunda opción(user coloca '0' para salir / línea actual 71).
-*HABÍA UN BREAK MAL UBICADO
+*HABÍA UN BREAK MAL UBICADO.
 
 - Opción inválida en los if, si presiono enter sín ninguna opción respone con Nan igual(línea actual 43 y 51).
-*ERA PARSEINT, NO NUMBER LPM
+*ERA PARSEINT, NO NUMBER LPM.
 
 - No se corta el bucle cuando se coloca -1, en la opcion del 2do bucle while interno y ya coloque un break(línea actual 54).
-*NO ENCUENTRO SOLUCION
+*NO ENCUENTRO SOLUCION.
 
 --------------------------------------------------------------------------------------
 
@@ -42,8 +42,8 @@ Consigna Para T.P.(Entrega 2)
 Traslada al proyecto integrador el concepto de objetos, visto en la clase de hoy. 
 A partir de los ejemplos mostrados la primera clase, y en funcion del tipo de simulador que 
 hayas elegido, deberás:
-- Incorporar al menor 1 array en tu proyecto
-- Utilizar algunos de los métodos o propiedades vistos en la clase
+- Incorporar al menor 1 array en tu proyecto.
+- Utilizar algunos de los métodos o propiedades vistos en la clase.
 
 --------------------------------------------------------------------------------------
 
@@ -56,7 +56,7 @@ Lo que no puedo solucionar es el utilizar objetos.
 
 - Terminé agregando todas las funciones de la calculadora a una clase(Calculadora) y objeto (calculadoraVar).
 
-- Agregué unas clases y objetos extras para la creación de una venta de útiles escolares(class Utiles)
+- Agregué unas clases y objetos extras para la creación de una venta de útiles escolares(class Utiles).
 
 --------------------------------------------------------------------------------------
 
@@ -64,10 +64,13 @@ Lo que no puedo solucionar es el utilizar objetos.
 Problemas y soluciones - Calculadora "Científica" (Entrega 2)
 
 - Cambiar las funciones a un archivo aparte es más ordenado, pero devuelve que no existe ninguna función.
-Tenía que poner antes la etiqueta de funciones y debajo la aplicación: <script scr="funciones.js">, y debajo <script scr"main.js"> en HTML
+Tenía que poner antes la etiqueta de funciones y debajo la aplicación: <script scr="funciones.js">, y debajo <script scr"main.js"> en HTML.
 
-- No se como agregar una clase y a esa clase un objeto siendo el proyecto una calculadora
-Pedí ayuda al tutor Giuliano. Me ayudo aportando la idea de crear la calculadora en una clase directamente
+- No se como agregar una clase y a esa clase un objeto siendo el proyecto una calculadora.
+Pedí ayuda al tutor Giuliano. Me ayudo aportando la idea de crear la calculadora en una clase directamente.
+
+- Se rompe cuando presiono -1 para salir al menú principal de cada app.
+Falto agregar la variable opcion a las respectivas clases de cada app(calculadora científica(opt) y venta de utiles(catalogo)).
 
 --------------------------------------------------------------------------------------
 
@@ -82,7 +85,7 @@ while(true){
             alert("Opción incorrecta. Intente nuevamente!")
 
         } else if (opt === 1) {//Introducir  '1'  arranca la calculadora de dividendos
-            calculadoraVar.dividendos();//toma 1 número y retorna sus dividendos
+            calculadoraVar.dividendos(opt);//toma 1 número y retorna sus dividendos
 
         } else if (opt === 2) {
             calculadoraVar.suma();//Tomas dos valores y retorna su suma
