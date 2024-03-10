@@ -9,7 +9,9 @@
 4. Replanteo de evolución de proyecto (Entrega 2).
 5. Problemas y soluciones - Calculadora "Científica" (Entrega 2).
 6. Ejercicio práctico - Calculadora "Científica"
+
 --------------------------------------------------------------------------------------
+
 1. 
 Consigna Para T.P.(Entrega 1)
 
@@ -17,7 +19,9 @@ Tomando como base los ejemplos de la estructura for y while,
 crear un algoritomo que repita un bloque de instrucciones.
 En cada repetición es necesario efectual una operación o comparación
 para obtener una salida por alerta o consola.
+
 --------------------------------------------------------------------------------------
+
 2. 
 Problemas y soluciones - Calculadora de Dividendos(Entrega 1)
 
@@ -29,7 +33,9 @@ Problemas y soluciones - Calculadora de Dividendos(Entrega 1)
 
 - No se corta el bucle cuando se coloca -1, en la opcion del 2do bucle while interno y ya coloque un break(línea actual 54).
 *NO ENCUENTRO SOLUCION
+
 --------------------------------------------------------------------------------------
+
 3. 
 Consigna Para T.P.(Entrega 2)
 
@@ -38,15 +44,22 @@ A partir de los ejemplos mostrados la primera clase, y en funcion del tipo de si
 hayas elegido, deberás:
 - Incorporar al menor 1 array en tu proyecto
 - Utilizar algunos de los métodos o propiedades vistos en la clase
+
 --------------------------------------------------------------------------------------
+
 4. 
 Replanteo de evolución de proyecto (Entrega 2)
 
-Tuve inconvenientes para re-plantearme la idea del proyecto final, ya qué no se me ocurre como utilizar los objetos y funciones. Ahora estoy agregando
+- Tuve inconvenientes para re-plantearme la idea del proyecto final, ya qué no se me ocurre como utilizar los objetos y funciones. Ahora estoy agregando
 más cantidad de operaciones para realizar, y que se vea reflejado en el código, solo funciones(aprender a acortar código para el que lo lea). 
 Lo que no puedo solucionar es el utilizar objetos.
 
+- Terminé agregando todas las funciones de la calculadora a una clase(Calculadora) y objeto (calculadoraVar).
+
+- Agregué unas clases y objetos extras para la creación de una venta de útiles escolares(class Utiles)
+
 --------------------------------------------------------------------------------------
+
 5.
 Problemas y soluciones - Calculadora "Científica" (Entrega 2)
 
@@ -55,8 +68,6 @@ Tenía que poner antes la etiqueta de funciones y debajo la aplicación: <script
 
 - No se como agregar una clase y a esa clase un objeto siendo el proyecto una calculadora
 Pedí ayuda al tutor Giuliano. Me ayudo aportando la idea de crear la calculadora en una clase directamente
-
--
 
 --------------------------------------------------------------------------------------
 
