@@ -96,7 +96,6 @@ while(true){
             break;
                 
         } else if (opt === 0) {//Al introducir '0' termina el bucle principal
-            alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
             break
             
         } else {//Solo si no coloca opciones correctas
@@ -128,7 +127,6 @@ while(true){
             alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
             break;
         }else if (catalogo === 0){
-            alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
             break;
         }else {//Solo si no coloca opciones correctas
             alert("Opción incorrecta. Intente nuevamente!");

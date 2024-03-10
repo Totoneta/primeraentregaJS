@@ -7,14 +7,13 @@ class Calculadora{
         alert(calculadoraVar.bienvenida);
         let dividendos = [];                                           
         while (true) {
-            let numa = parseInt(prompt('Ingresa un número(Para abandonar introduzca -1): '));
+            let numa = parseInt(prompt('Ingresa un número para calcular sus dividendos:\nPara volver al Menú Principal escriba -1 y presione Aceptar. '));
     
             if (isNaN(numa) || numa === "") { //No aceptar 'nan' o ''
                 alert("Opción incorrecta. Intente nuevamente!")
     
             } else if (numa === -1) {//Salida dentro del bucle, para que no sea infinito para el usuario
                 opt = -1;
-                alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
                 break;
     
             } else {//Los calculos de dividendos
@@ -35,7 +34,7 @@ class Calculadora{
         while (true) {
             alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('Suma:\nIngresa el primer número: '));
-            let numb = parseInt(prompt('Suma:\nIngresa el segundo número(Para abandonar introduzca -1): '));
+            let numb = parseInt(prompt('Suma:\nIngresa el segundo número\nPara volver al Menú Principal escriba -1 y presione Aceptar. '));
             let res = 0;
     
             if (isNaN(numa) || isNaN(numb) || numa === "" || numb === "") { //No aceptar 'nan' o '' en ambos números introducidos por el user
@@ -43,7 +42,6 @@ class Calculadora{
     
             } else if (numb === -1) {//Salida dentro del bucle, para que no sea infinito para el usuario
                 opt = -1;
-                alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
                 break;
     
             } else {//Suma
@@ -58,7 +56,7 @@ class Calculadora{
         while (true) {
             alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('Resta:\nIngresa el primer número: '));
-            let numb = parseInt(prompt('Resta:\nIngresa el segundo número(Para abandonar introduzca -1): '));
+            let numb = parseInt(prompt('Resta:\nIngresa el segundo número\nPara volver al Menú Principal escriba -1 y presione Aceptar. '));
             let res = 0;
     
             if (isNaN(numa) || isNaN(numb) || numa === "" || numb === "") { //No aceptar 'nan' o '' en ambos números introducidos por el user
@@ -66,7 +64,6 @@ class Calculadora{
     
             } else if (numb === -1) {//Salida dentro del bucle, para que no sea infinito para el usuario
                 opt = -1;
-                alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
                 break;
     
             } else {//Resta
@@ -81,7 +78,7 @@ class Calculadora{
         while (true) {
             alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('Multiplicación:\nIngresa el primer número: '));
-            let numb = parseInt(prompt('Multiplicación:\nIngresa el segundo número(Para abandonar introduzca -1): '));
+            let numb = parseInt(prompt('Multiplicación:\nIngresa el segundo número\nPara volver al Menú Principal escriba -1 y presione Aceptar. '));
             let res = 0;
     
             if (isNaN(numa) || isNaN(numb) || numa === "" || numb === "") { //No aceptar 'nan' o '' en ambos números introducidos por el user
@@ -89,7 +86,6 @@ class Calculadora{
     
             } else if (numb === -1) {//Salida dentro del bucle, para que no sea infinito para el usuario
                 opt = -1;
-                alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
                 break;
     
             } else {//Multiplicación
@@ -104,7 +100,7 @@ class Calculadora{
         while (true) {
             alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('División:\nIngresa el primer número: '));
-            let numb = parseInt(prompt('División:\nIngresa el segundo número(Para abandonar introduzca -1): '));
+            let numb = parseInt(prompt('División:\nIngresa el segundo número\nPara volver al Menú Principal escriba -1 y presione Aceptar. '));
             let res = 0;
     
             if (isNaN(numa) || isNaN(numb) || numa === "" || numb === "") { //No aceptar 'nan' o '' en ambos números introducidos por el user
@@ -112,7 +108,6 @@ class Calculadora{
     
             } else if (numb === -1) {//Salida dentro del bucle, para que no sea infinito para el usuario
                 opt = -1;
-                alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
                 break;
     
             } else {//División
@@ -127,7 +122,7 @@ class Calculadora{
         while (true) {
             alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('Potencia:\nIngresa el primer número(base): '));
-            let numb = parseInt(prompt('Potencia:\nIngresa el segundo número(Exponente).Para abandonar introduzca -1: '));
+            let numb = parseInt(prompt('Potencia:\nIngresa el segundo número(Exponente)\nPara volver al Menú Principal escriba -1 y presione Aceptar. '));
             let res = 0;
     
             if (isNaN(numa) || isNaN(numb) || numa === "" || numb === "") { //No aceptar 'nan' o '' en ambos números introducidos por el user
@@ -135,7 +130,6 @@ class Calculadora{
     
             } else if (numb === -1) {//Salida dentro del bucle, para que no sea infinito para el usuario
                 opt = -1;
-                alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
                 break;
     
             } else {//Potencia
@@ -149,7 +143,7 @@ class Calculadora{
     raizcuadrada() {//Raíz cuadrada
         while (true) {
             alert(calculadoraVar.bienvenida);
-            let numa = parseInt(prompt('RaízCuadrada:\nIngresa el número para conseguir su raíz cuadrada.\nPara abandonar introduzca -1:\n '));
+            let numa = parseInt(prompt('RaízCuadrada:\nIngresa el número para conseguir su raíz cuadrada.\nPara volver al Menú Principal escriba -1 y presione Aceptar. '));
             let res = 0;
     
             if (isNaN(numa) || numa === "") { //No aceptar 'nan' o '' en ambos números introducidos por el user
@@ -157,7 +151,6 @@ class Calculadora{
     
             } else if (numa === -1) {//Salida dentro del bucle, para que no sea infinito para el usuario
                 opt = -1;
-                alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
                 break;
     
             } else {//Raíz cuadrada
@@ -180,17 +173,24 @@ class Utiles{//Útiles escolares
 
     venta(){//Si alguien quiere comprar, resta del inventario
         while(true){
-            let cant = parseInt(prompt("Cuánt@s " + this.nombre + " desea llevar?\nPara volver escriba -1 y presione Aceptar."));
+            let cant = parseInt(prompt("Qué cantidad de " + this.nombre + " deseas llevar?\nEl precio por unidad es de $" + this.precio + "\nPara volver al Menú Principal escriba -1 y presione Aceptar."));
             let preciofinal = 0;
-            if (cant === -1){
+            if (isNaN(cant) || cant === "") { //No aceptar 'nan' o ''
+                alert("Opción incorrecta. Intente nuevamente!");
+            }else if (cant === -1){
+                opt = -1;
                 break;
+            }else if (cant>this.cantidad){
+                alert("No contamos con esa cantidad. Actualmente tenemos " + this.cantidad + " " + this.nombre + ".");
             }else{
                 this.cantidad -= cant; 
                 preciofinal += this.precio * cant;
                 if(this.cantidad<1){
                     alert("Aquí tiene " + cant + " de " + this.nombre + " con un precio total de $" + preciofinal + ", no quedaron más " + this.nombre);
+                    break;
                 }else{
-                    alert("Aquí tiene " + cant + " de " + this.nombre + " con un precio total de $" + preciofinal + ", si necesitas más hay " + this.cantidad);
+                    alert("Aquí tiene " + cant + " de " + this.nombre + "\nCon un precio total de: $" + preciofinal + "\nSi necesitas más, aún nos restan " + this.cantidad + " de " + this.nombre);
+                    break;
                 };
             };
         };
