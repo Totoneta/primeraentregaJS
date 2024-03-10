@@ -1,4 +1,4 @@
-class calculadora{
+class Calculadora{
     constructor(bienvenida){
         this.bienvenida = bienvenida;
     };
@@ -169,5 +169,33 @@ class calculadora{
     };   
 };
 
+class Utiles{//Útiles escolares
+    constructor(nombreIntro, colorIntro, marcaIntro, cantidadIntro, precioIntro,){
+        this.nombre = nombreIntro;
+        this.color = colorIntro;
+        this.marca = marcaIntro;
+        this.cantidad =cantidadIntro;
+        this.precio = precioIntro;
+    };
+
+    venta(){//Si alguien quiere comprar, resta del inventario
+        while(true){
+            let cant = parseInt(prompt("Cuánt@s " + this.nombre + " desea llevar?\nPara volver escriba -1 y presione Aceptar."));
+            let preciofinal = 0;
+            if (cant === -1){
+                break;
+            }else{
+                this.cantidad -= cant; 
+                preciofinal += this.precio * cant;
+                if(this.cantidad<1){
+                    alert("Aquí tiene " + cant + " de " + this.nombre + " con un precio total de $" + preciofinal + ", no quedaron más " + this.nombre);
+                }else{
+                    alert("Aquí tiene " + cant + " de " + this.nombre + " con un precio total de $" + preciofinal + ", si necesitas más hay " + this.cantidad);
+                };
+            };
+        };
+    };
+
+};
 
 
