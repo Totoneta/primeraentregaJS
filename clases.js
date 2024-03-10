@@ -1,8 +1,4 @@
 class calculadora{
-    constructor(numa, numb){
-        this.numa = numa;
-        this.numb = numb;
-    };
     
     dividendos() {//sacar los dividendos
         let dividendos = [];                                           

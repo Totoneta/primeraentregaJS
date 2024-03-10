@@ -68,25 +68,25 @@ while (true) {//Envuelve todo el codigo para que siempre se mantenga activo hast
         alert("Opción incorrecta. Intente nuevamente!")
 
     } else if (opt === 1) {//Introducir  '1'  arranca la calculadora de dividendos
-        dividendos();//toma 1 número y retorna sus dividendos
+        calculadoraVar.dividendos();//toma 1 número y retorna sus dividendos
 
     } else if (opt === 2) {
         suma();//Tomas dos valores y retorna su suma
 
     } else if (opt === 3) {
-        resta();//Tomas dos valores y retorna el 1 valor - el 2 valor
+        calculadoraVar.resta();//Tomas dos valores y retorna el 1 valor - el 2 valor
 
     } else if (opt === 4) {
-        multiplicacion();//Tomas dos valores y retorna su multiplicación
+        calculadoraVar.multiplicacion();//Tomas dos valores y retorna su multiplicación
 
     } else if (opt === 5) {
-        division();//Tomas dos valores y retorna la división del 1 valor / el 2 valor
+        calculadoraVar.division();//Tomas dos valores y retorna la división del 1 valor / el 2 valor
 
     } else if (opt === 6) {
-        potencia();//Tomas dos valores y retorna el 1 valor como base y el 2 valor como exponente
+        calculadoraVar.potencia();//Tomas dos valores y retorna el 1 valor como base y el 2 valor como exponente
         
     } else if (opt === 7) {
-        raizcuadrada();//Tomas un valor y retorna su raíz cuadrada
+        calculadoraVar.raizcuadrada();//Tomas un valor y retorna su raíz cuadrada
 
     }else if (opt === -1) {//Segunda salida dentro del bucle, para que no sea infinito para el usuario
         alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
