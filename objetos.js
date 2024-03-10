@@ -1,1 +1,1 @@
-let calculadoraVar = new calculadora ();
+let calculadoraVar = new calculadora ("¡Disfruta haciendo calculos!\nPresione 'Aceptar' para continuar con la operación.");

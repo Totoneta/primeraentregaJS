@@ -71,7 +71,7 @@ while (true) {//Envuelve todo el codigo para que siempre se mantenga activo hast
         calculadoraVar.dividendos();//toma 1 número y retorna sus dividendos
 
     } else if (opt === 2) {
-        suma();//Tomas dos valores y retorna su suma
+        calculadoraVar.suma();//Tomas dos valores y retorna su suma
 
     } else if (opt === 3) {
         calculadoraVar.resta();//Tomas dos valores y retorna el 1 valor - el 2 valor

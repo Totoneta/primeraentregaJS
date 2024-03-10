@@ -1,6 +1,10 @@
 class calculadora{
-    
+    constructor(bienvenida){
+        this.bienvenida = bienvenida;
+    };
+
     dividendos() {//sacar los dividendos
+        alert(calculadoraVar.bienvenida);
         let dividendos = [];                                           
         while (true) {
             let numa = parseInt(prompt('Ingresa un número(Para abandonar introduzca -1): '));
@@ -27,9 +31,9 @@ class calculadora{
     
     };
     
-    
     suma() {//suma
         while (true) {
+            alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('Suma:\nIngresa el primer número: '));
             let numb = parseInt(prompt('Suma:\nIngresa el segundo número(Para abandonar introduzca -1): '));
             let res = 0;
@@ -49,10 +53,10 @@ class calculadora{
             };
         };
     };
-    
-    
+        
     resta() {//resta
         while (true) {
+            alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('Resta:\nIngresa el primer número: '));
             let numb = parseInt(prompt('Resta:\nIngresa el segundo número(Para abandonar introduzca -1): '));
             let res = 0;
@@ -72,10 +76,10 @@ class calculadora{
             };
         };
     };
-    
-    
+        
     multiplicacion() {//multiplicación
         while (true) {
+            alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('Multiplicación:\nIngresa el primer número: '));
             let numb = parseInt(prompt('Multiplicación:\nIngresa el segundo número(Para abandonar introduzca -1): '));
             let res = 0;
@@ -94,11 +98,11 @@ class calculadora{
                 break;
             };
         };
-    };
-    
+    };    
     
     division() {//división
         while (true) {
+            alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('División:\nIngresa el primer número: '));
             let numb = parseInt(prompt('División:\nIngresa el segundo número(Para abandonar introduzca -1): '));
             let res = 0;
@@ -121,6 +125,7 @@ class calculadora{
     
     potencia() {//Potencia
         while (true) {
+            alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('Potencia:\nIngresa el primer número(base): '));
             let numb = parseInt(prompt('Potencia:\nIngresa el segundo número(Exponente).Para abandonar introduzca -1: '));
             let res = 0;
@@ -143,7 +148,7 @@ class calculadora{
     
     raizcuadrada() {//Raíz cuadrada
         while (true) {
-    
+            alert(calculadoraVar.bienvenida);
             let numa = parseInt(prompt('RaízCuadrada:\nIngresa el número para conseguir su raíz cuadrada.\nPara abandonar introduzca -1:\n '));
             let res = 0;
     
@@ -163,3 +168,6 @@ class calculadora{
         };
     };   
 };
+
+
+
