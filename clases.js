@@ -173,27 +173,32 @@ class Utiles{//Útiles escolares
         this.precio = precioIntro;
     };
 
-    venta(catalogo, carrito){//Si alguien quiere comprar, resta del inventario
+    venta(){//Si alguien quiere comprar, resta del inventario
+        let precioVentaC = 0;
         while(true){
-            let cant = parseInt(prompt("Carrito: $" + carrito + "\nQué cantidad de " + this.nombre + " deseas llevar?\nEl precio por unidad es de $" + this.precio + "\nPara volver al Menú Principal escriba 0 y presione Aceptar."));
-            let preciofinal = 0;
+            let cant = parseInt(prompt("Carrito: $" + precioVenta + "\nQué cantidad de " + this.nombre + " deseas llevar?\nEl precio por unidad es de $" + this.precio + "\nPara volver al Menú Principal escriba 0 y presione Aceptar."));
+
             if (isNaN(cant) || cant === "") { //No aceptar 'nan' o ''
-                alert("Carrito: $" + carrito + "\nOpción incorrecta. Intente nuevamente!");
+                alert("Carrito: $" + precioVenta + "\nOpción incorrecta. Intente nuevamente!");
+
             }else if (cant === 0){
-                catalogo = 0;
                 break;
+
             }else if (cant>this.cantidad){
-                alert("No contamos con esa cantidad. Actualmente tenemos " + this.cantidad + " " + this.nombre + ".");
+                alert("Carrito: $" + precioVenta + "\nNo contamos con esa cantidad. Actualmente tenemos " + this.cantidad + " " + this.nombre + ".");
+
             }else{
                 this.cantidad -= cant; 
-                preciofinal += this.precio * cant;
-                carrito += preciofinal;
+                precioVentaC = this.precio * cant;
+                
+
                 if(this.cantidad<1){
-                    alert("Carrito: $" + carrito + "\nAquí tiene " + cant + " de " + this.nombre + " con un precio total de $" + preciofinal + ", no quedaron más " + this.nombre);
-                    break;
+                    alert("Carrito: $" + precioVenta + "\nAquí tiene " + cant + " de " + this.nombre + " con un precio total de $" + precioVentaC + ", no quedaron más " + this.nombre);
+                    return precioVentaC;
+
                 }else{
-                    alert("Carrito: $" + carrito + "\nAquí tiene " + cant + " de " + this.nombre + "\nCon un precio total de: $" + preciofinal + "\nSi necesitas más, aún nos restan " + this.cantidad + " de " + this.nombre);
-                    break;
+                    alert("Carrito: $" + precioVenta + "\nAquí tiene " + cant + " de " + this.nombre + "\nCon un precio total de: $" + precioVentaC + "\nSi necesitas más, aún nos restan " + this.cantidad + " de " + this.nombre);
+                    return precioVentaC;
                 };
             };
         };

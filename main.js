@@ -74,10 +74,12 @@ Falto agregar la variable opcion a las respectivas clases de cada app(calculador
 
 -No se almacena la suma de compra en "venta de útiles", en la variable carrito, cuando vuelve al inicio de compra retorna $0
 
+
 --------------------------------------------------------------------------------------
 
 6. Calculadora "Científica y Stock de Útiles":
 */
+let precioVenta = 0;//Compra total
 while(true){
     opcioningreso = parseInt(prompt("Ingrese:\n1 - Calculadora Científica\n2 - Venta de útiles escolares\nPara abandonar escriba 0 y presione Aceptar."));
     while (opcioningreso === 1) {//Envuelve todo el codigo para que siempre se mantenga activo hasta que el usuario decida por opcion terminarlo
@@ -116,33 +118,32 @@ while(true){
         };
 
     };
+    
 
     while(opcioningreso === 2){
-        let carrito = 0;//Compra total
-        let catalogo = parseInt(prompt("Carrito: $" + carrito + "\nIngrese una opción para comprar:\n1 - Lápiz\n2 - Birome\n3 - Liquid Paper\n4 - Hojas cuadriculadas\n5 - Hojas rayadas\n6 - Carpeta\n7 - Cartuchera\nPresione 0 para volver al Menú Principal."))
-        
+        let catalogo = parseInt(prompt("Carrito: $" + precioVenta + "\nIngrese una opción para comprar:\n1 - Lápiz\n2 - Birome\n3 - Liquid Paper\n4 - Hojas cuadriculadas\n5 - Hojas rayadas\n6 - Carpeta\n7 - Cartuchera\nPresione 0 para volver al Menú Principal."))
         if (isNaN(catalogo) || catalogo === "") { //No aceptar 'nan' o ''
-            alert("Carrito: $" + carrito + "\nOpción incorrecta. Intente nuevamente!");
+            alert("Carrito: $" + precioVenta + "\nOpción incorrecta. Intente nuevamente!");
         }else if (catalogo === 1){//Lapices
-            Lapiz.venta(catalogo, carrito);
-
+            precioVenta += Lapiz.venta();
+            
         }else if (catalogo === 2){//Biromes
-            Birome.venta();
+            precioVenta += Birome.venta();
 
         }else if (catalogo === 3){//LiquidPaper
-            Liquidpaper.venta();
+            precioVenta += Liquidpaper.venta();
 
         }else if (catalogo === 4){//Hojas Cuadriculadas
-            Hojascuadriculadas.venta();
+            precioVenta += Hojascuadriculadas.venta();
 
         }else if (catalogo === 5){//Hojas Rayadas
-            Hojasrayadas.venta();
+            precioVenta += Hojasrayadas.venta();
 
         }else if (catalogo === 6){//Carpetas
-            Carpeta.venta();
+            precioVenta += Carpeta.venta();
 
         }else if (catalogo === 7){//Cartucheras
-            Cartuchera.venta();
+            precioVenta += Cartuchera.venta();
 
         }else if (catalogo === 0){
             break;
@@ -155,6 +156,9 @@ while(true){
     while(opcioningreso === 0){
         alert("Gracias por visitar nuestra aplicación.\n¡Esperamos verte pronto!");
         break; 
+    };
+    if (opcioningreso === 0){
+        break;
     };
 
 };
